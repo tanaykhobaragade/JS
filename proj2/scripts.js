@@ -9,7 +9,25 @@ const center = document.querySelector(".center");
 // console.log(window.getComputedStyle(red).backgroundColor);
 
 const getBGColor = (selectedElement) => {
-    return window.getComputedStyle(red).backgroundColor;
+    return window.getComputedStyle(selectedElement).backgroundColor;
 };
 
-console.log(getBGColor(pink));
+// console.log(getBGColor(pink));
+// https://developer.mozilla.org/en-US/docs/Web/Events
+
+// var color = getBGColor(pink);
+// pink.addEventListener("click", () => {
+//     center.style.background = color;
+// });
+
+const magicColorChanger = (element, color) => {
+    return element.addEventListener("mouseenter", () => {
+        center.style.background = color;
+    });
+};
+
+magicColorChanger(red, getBGColor(red));
+magicColorChanger(cyan, getBGColor(cyan));
+magicColorChanger(violet, getBGColor(violet));
+magicColorChanger(orange, getBGColor(orange));
+magicColorChanger(pink, getBGColor(pink));
