@@ -10,9 +10,19 @@ var User = function(firstName, courseCount){
         console.log(`Course count is: ${this.courseCount}`);
     };
 };
+
+User.prototype.getFirstName = function () {
+    console.log(`Your First name is : ${this.firstName}`);
+}
+
 // whenever new keyword is used this keyword is not a regular function call
 var tanay = new User("tanay", 2);
-console.log(tanay);
+// console.log(tanay.firstName);
+tanay.getCourseCount();
+tanay.getFirstName();
+// console.log(tanay);
 
 var yash = new User("yash", 4);
-console.log(yash);
+yash.getCourseCount();
+yash.getFirstName();
+// console.log(yash);
