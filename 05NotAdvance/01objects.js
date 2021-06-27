@@ -19,7 +19,9 @@ User.prototype.getFirstName = function () {
 var tanay = new User("tanay", 2);
 // console.log(tanay.firstName);
 tanay.getCourseCount();
-tanay.getFirstName();
+if(tanay.hasOwnProperty("firstName")) {
+    tanay.getFirstName();
+}
 // console.log(tanay);
 
 var yash = new User("yash", 4);
