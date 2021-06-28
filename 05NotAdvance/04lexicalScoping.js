@@ -2,7 +2,7 @@
 function init(){
     var firstName = "Tanay";
     function sayFirstName (){
-        console.log(firstname);
+        console.log(firstName);
     }
     sayFirstName();
 }
