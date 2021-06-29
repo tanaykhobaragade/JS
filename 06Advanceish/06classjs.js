@@ -23,3 +23,9 @@ class User {
 }
 
 module.exports = User;
+
+const rock = new User("rock", "rock@rock.com")
+console.log(rock.getInfo());
+rock.enrollCourse("Angular BootCamp");
+console.log(rock.getcourseList());
+console.log(rock.courseList);
