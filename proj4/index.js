@@ -45,8 +45,9 @@ function success() {
 function fail() {
     // console.log("Failed");
     setTimeout(() => {
-    firstCard.classList.remove("flip")
-    secondCard.classList.remove("flip")
+    firstCard.classList.remove("flip");
+    secondCard.classList.remove("flip");
+    reset();
 },500)
 }
 
